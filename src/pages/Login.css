@@ -1,0 +1,146 @@
+/* src/pages/Login.css */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.login-header {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--panel-border);
+  padding: 16px 48px;
+  border-radius: 12px;
+  margin-bottom: 32px;
+  backdrop-filter: blur(10px);
+}
+
+.login-header h1 {
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: 2px;
+  color: var(--text-white);
+  font-weight: 700;
+}
+
+.login-tabs {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.tab-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--panel-border);
+  color: var(--text-muted);
+  padding: 12px 24px;
+  border-radius: 24px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+.tab-btn.active {
+  background: var(--primary-yellow);
+  color: #111;
+  border-color: var(--primary-yellow);
+  box-shadow: var(--shadow-glow);
+}
+
+.tab-btn:hover:not(.active) {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-white);
+}
+
+.login-form {
+  padding: 48px;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-group label {
+  font-size: 14px;
+  color: var(--text-white);
+  margin-left: 4px;
+}
+
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-wrapper .input-field {
+  padding-right: 80px; /* space for icons */
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: color 0.2s;
+}
+
+.icon-btn:hover {
+  color: var(--text-white);
+}
+
+.eye-btn {
+  right: 44px;
+}
+
+.submit-btn {
+  right: 12px;
+  background: rgba(255,255,255,0.1);
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  color: var(--text-white);
+}
+
+.submit-btn:hover {
+  background: var(--primary-yellow);
+  color: #111;
+}
+
+.help-btn {
+  position: absolute;
+  bottom: 32px;
+  right: 32px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--panel-border);
+  color: var(--text-white);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.help-btn:hover {
+  background: var(--panel-hover);
+  border-color: var(--text-muted);
+}
